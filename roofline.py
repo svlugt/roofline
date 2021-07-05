@@ -26,8 +26,8 @@ matplotlib.rc('font', family='Arial')
 
 # Constants
 # The following constants define the span of the intensity axis
-START = -4
-STOP = 6
+START = -2
+STOP = 14
 N = abs(STOP - START + 1)
 
 
@@ -95,7 +95,7 @@ def process(hw_platforms, sw_apps, xkcd):
                            yticks=numpy.logspace(1, 20, num=20, base=2))
 
     axes[0].set_ylabel("Achieveable Performance (GFLOP/s)", fontsize=12)
-    axes[1].set_ylabel("Normalized Achieveable Performance (MFLOP/s/$)", fontsize=12)
+    axes[1].set_ylabel("Normalized Achieveable Performance (MFLOP/s/euro)", fontsize=12)
 
     axes[0].set_title('Roofline Model', fontsize=14)
     axes[1].set_title('Normalized Roofline Model', fontsize=14)
