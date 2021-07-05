@@ -8,6 +8,7 @@ The script can take its input from:
    Then, you will be prompted to enter the applications' intensities followed by an `EOF`.
 2. files: In this case, it reads two comma-separated values (CSV) files; one for HW and the other
    for the applications.
+3. Or create a HW only plot e.g.: `python roofline.py -i hw_db.csv --hw-only`
 
 Requirements
 ------------
